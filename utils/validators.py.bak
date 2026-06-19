@@ -1,0 +1,106 @@
+import re
+from datetime import date, datetime
+
+
+def validate_email(email):
+    pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+    return re.match(pattern, email)
+
+
+def validate_dob(dob):
+    """
+    Accepts:
+    - datetime.date
+    - datetime.datetime
+    - Year only (2002)
+    - YYYY-MM-DD
+    - DD/MM/YYYY
+    - MM/DD/YYYY
+    - DD-MM-YYYY
+    - MM-DD-YYYY
+    - YYYY/MM/DD
+
+    Returns True if DOB is valid and not in the future.
+    """
+
+    today = date.today()
+    dob_date = None
+
+    # If already a date object
+    if isinstance(dob, date) and not isinstance(dob, datetime):
+        dob_date = dob
+
+    # If datetime object
+    elif isinstance(dob, datetime):
+        dob_date = dob.date()
+
+    # If integer year
+    elif isinstance(dob, int):
+        try:
+            dob_date = date(dob, 1, 1)
+        except ValueError:
+            return False
+
+    # If string input
+    elif isinstance(dob, str):
+        dob = dob.strip()
+
+        # Year only (e.g. 2002)
+        if dob.isdigit() and len(dob) == 4:
+            try:
+                dob_date = date(int(dob), 1, 1)
+            except ValueError:
+                return False
+
+        else:
+            formats = [
+                "%Y-%m-%d",
+                "%d/%m/%Y",
+                "%m/%d/%Y",
+                "%d-%m-%Y",
+                "%m-%d-%Y",
+                "%Y/%m/%d"
+            ]
+
+            for fmt in formats:
+                try:
+                    dob_date = datetime.strptime(
+                        dob,
+                        fmt
+                    ).date()
+                    break
+                except ValueError:
+                    pass
+
+    else:
+        return False
+
+    if dob_date is None:
+        return False
+
+    return dob_date <= today
+
+
+def validate_blood_values(
+        glucose,
+        haemoglobin,
+        cholesterol):
+
+    try:
+        glucose = float(glucose)
+        haemoglobin = float(haemoglobin)
+        cholesterol = float(cholesterol)
+
+        if glucose <= 0:
+            return False
+
+        if haemoglobin <= 0:
+            return False
+
+        if cholesterol <= 0:
+            return False
+
+        return True
+
+    except ValueError:
+        return False
