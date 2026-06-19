@@ -52,7 +52,7 @@ Preventive health suggestions
 ###View Patients
 
 Users can view all stored patient records.
-<img width="1837" height="822" alt="Screenshot 2026-06-18 223124" src="https://github.com/user-attachments/assets/0c0b2c85-78e0-4a5d-be7d-1a66c914e6d9" />
+<img width="1866" height="666" alt="Screenshot 2026-06-18 223059" src="https://github.com/user-attachments/assets/af5b1f82-fa89-4cc8-8ea4-0976e2f816e8" />
 
 
 ###Analytics Dashboard
@@ -64,7 +64,7 @@ Risk distribution
 Health statistics
 
 
-<img width="1866" height="666" alt="Screenshot 2026-06-18 223059" src="https://github.com/user-attachments/assets/af5b1f82-fa89-4cc8-8ea4-0976e2f816e8" />
+<img width="1837" height="822" alt="Screenshot 2026-06-18 223124" src="https://github.com/user-attachments/assets/0c0b2c85-78e0-4a5d-be7d-1a66c914e6d9" />
 
 ###Technologies Used
 
