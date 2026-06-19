@@ -21,7 +21,6 @@ The application also uses Google's Gemini AI to generate health recommendations 
 ###Add Patient
 
 Users can enter:
-
 Full Name
 Date of Birth
 Email
@@ -29,6 +28,7 @@ Glucose Level
 Haemoglobin Level
 Cholesterol Level
 
+<img width="1371" height="838" alt="Screenshot 2026-06-18 223033" src="https://github.com/user-attachments/assets/b474d386-5736-4e3e-983a-c253670867c1" />
 
 ###Risk Prediction
 
@@ -52,6 +52,9 @@ Preventive health suggestions
 ###View Patients
 
 Users can view all stored patient records.
+<img width="1837" height="822" alt="Screenshot 2026-06-18 223124" src="https://github.com/user-attachments/assets/0c0b2c85-78e0-4a5d-be7d-1a66c914e6d9" />
+<img width="1866" height="666" alt="Screenshot 2026-06-18 223059" src="https://github.com/user-attachments/assets/af5b1f82-fa89-4cc8-8ea4-0976e2f816e8" />
+
 
 ###Analytics Dashboard
 
@@ -73,6 +76,7 @@ Google Gemini API
 
 
 ###Project Structure
+
 Health-Risk-Predictor
 │
 ├── app.py
