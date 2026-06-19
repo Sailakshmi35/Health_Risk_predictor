@@ -28,7 +28,8 @@ Glucose Level
 Haemoglobin Level
 Cholesterol Level
 
-<img width="1371" height="838" alt="Screenshot 2026-06-18 223033" src="https://github.com/user-attachments/assets/b474d386-5736-4e3e-983a-c253670867c1" />
+<img width="1371" height="838" alt="Screenshot 2026-06-18 223033" src="https://github.com/user-attachments/assets/08ee17b1-195d-4717-bdf2-8983448c3b2a" />
+
 
 ###Risk Prediction
 
@@ -64,11 +65,9 @@ Number of patients
 Risk distribution
 Health statistics
 
-<img width="1866" height="666" alt="Screenshot 2026-06-18 223059" src="https://github.com/user-attachments/assets/08317e9c-d242-44f1-b5c7-74a0b30e908d" />
+<img width="1837" height="822" alt="Screenshot 2026-06-18 223124" src="https://github.com/user-attachments/assets/8d174767-207a-4569-845d-f8f43d40f829" />
+<img width="1866" height="666" alt="Screenshot 2026-06-18 223059" src="https://github.com/user-attachments/assets/8f480242-42f2-4ab3-b3fb-b41bc87a04c6" />
 
-
-
-<img width="1837" height="822" alt="Screenshot 2026-06-18 223124" src="https://github.com/user-attachments/assets/7bdd45f6-6375-4318-8915-f13c8b2b11b2" />
 
 
 
